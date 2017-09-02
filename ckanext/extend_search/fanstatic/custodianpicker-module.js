@@ -29,7 +29,7 @@ this.ckan.module('custodianpicker-module', function($, _) {
             //Event listener for when a user is selected from the list
             $("#cust_id").on('change', function () {
 
-                    $('#ext_cust_id').val($(this).attr('value'));
+                    $('#ext_cust_id').val($(this).val());
 
                     // Submit the <form id="dataset-search">.
                     $(".search-form").submit();
