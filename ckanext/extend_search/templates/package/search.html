@@ -22,6 +22,7 @@
   </section>
 
   {# Custodian <section> #}
+  {% if c.maintainers|length > 0 %}
   <section class="module module-narrow module-shallow">
     <h2 class="module-heading">
         <i class="icon-medium icon-filter"></i>
@@ -56,6 +57,6 @@
         {% endif %}
     </div>
   </section>
-
+  {% endif %}
   {{ super() }}
 {% endblock %}
